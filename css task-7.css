@@ -1,0 +1,111 @@
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: brown;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    background-color: rgb(115, 23, 23);
+    width: 500px;
+    height: 500px;
+    padding: 30px;
+    border-radius: 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: white;
+}
+
+.label-input-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.label {
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.circle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.label input[type="radio"] {
+    display: none;
+}
+
+.label input[type="radio"]:checked + .circle {
+    background-color: black;
+}
+
+.input {
+    flex: 3;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.gender-container {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.gender-container label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px; 
+}
+
+.circle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.gender-container input[type="radio"] {
+    display: none;
+}
+
+.gender-container input[type="radio"]:checked + .circle {
+    background-color: black;
+}
+
+
+
+
+    

@@ -1,0 +1,75 @@
+/* Reset default list styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Side Navigation Styling */
+.container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.sidenav {
+    width: 80px; /* Adjust the width to your preference */
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Side Navigation Links Styling */
+.sidenav ul li {
+    margin-bottom: 20px; /* Add space between the items */
+}
+
+.sidenav a {
+    display: block;
+    width: 50px; /* Adjust the size to your preference */
+    height: 50px; /* Adjust the size to your preference */
+    text-decoration: none;
+    transition: 0.3s;
+    border: 2px solid transparent; /* Add a border */
+    color: #fff;
+}
+
+/* Define button colors */
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.black {
+    background-color: black;
+}
+
+/* Hover effect */
+.sidenav a:hover {
+    opacity: 0.7; /* Adjust opacity for the hover effect */
+    border-color: white; /* Change the border color on hover */
+}
+
+/* Content Styling */
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 24px;
+}
+
+.content p {
+    font-size: 16px;
+}
+
+
+
+

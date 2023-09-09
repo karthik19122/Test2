@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Navigation Bar</title>
+    <style>
+       
+        body, ul {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            width: 200px;
+            background-color: white;
+            position: fixed;
+            height: 100%;
+            overflow: hidden;
+        }
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .navbar li {
+            padding: 10px 0;
+        }
+
+        .navbar li:first-child {
+            background-color: orange;
+        }
+
+        .navbar li:not(:first-child) {
+            background-color: skyblue;
+        }
+
+        .navbar li:hover {
+            background-color: #555;
+        }
+
+        
+        .navbar a {
+            text-decoration: none;
+            color: white; 
+            padding: 10px 20px;
+            display: block;
+        }
+
+        
+        .navbar li:not(:first-child) a {
+            color: blue; 
+        }
+
+        address {
+            margin-top: 1em;
+            padding-top: 1em;
+        }
+
+        address span {
+            border-top: thin solid black; 
+            display: inline; 
+            padding-top: 0.3em; 
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">Bootstrap</a></li>
+        </ul>
+    </div>
+    <address>
+        <span>Your Address Goes Here</span>
+    </address>
+</body>
+</html>
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Navigation Bar</title>
+    <style>
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the navigation bar */
+.navbar {
+    background-color: white;
+    overflow: hidden;
+}
+
+/* Style for the list items (links) */
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    background-color: rgb(177, 164, 164); /* Set the default background to light grey */
+}
+
+/* Style for the Home link */
+.navbar li:first-child {
+    background-color: #393131; /* Set the background for "Home" to cement color */
+}
+
+/* Style for the links when hovered */
+.navbar li:hover {
+    background-color: #555;
+}
+
+/* Style for the link text */
+.navbar a {
+    text-decoration: none;
+    color: black; /* Change text color to black */
+    padding: 10px 5px; /* Adjust padding */
+    display: inline-block; /* Ensure the span elements behave like blocks */
+    word-spacing: 0px; /* Remove extra word spacing by adjusting word-spacing */
+    position: relative; /* Add relative positioning */
+}
+
+/* Style for Java, CSS, HTML, and Bootstrap links */
+.navbar li:not(:first-child) a span.keyword {
+    color: blue; /* Change text color to blue for these spans */
+}
+.navbar li:not(:first-child) a span.key {
+    color: transparent; /* Change text color to blue for these spans */
+}
+
+/* Style for the home span */
+.navbar li:first-child a span.home {
+    color: white; /* Change text color to white for the home span */
+}
+
+/* Style for the vertical line between words */
+.navbar li:not(:first-child) a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    margin-top: 9px;
+    right: -1px; /* Adjust the position to align with the next word */
+    height: 50%; /* Vertical line height */
+    width: 1px; /* Vertical line thickness */
+    background-color: black; /* Set the line color to black */
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#"><span class="home">Home</span></a></li>
+            <li><a href="#"><span class="keyword">Java</span></a></li>
+            <li><a href="#"><span class="keyword">CSS</span></a></li>
+            <li><a href="#"><span class="keyword">HTML</span></a></li>
+            <li><a href="#"><span class="key">Bootstrap</span></a></li>
+        </ul>
+    
+</body>
+</html>
+
+
+
+
+
+
